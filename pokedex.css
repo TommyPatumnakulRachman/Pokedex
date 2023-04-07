@@ -1,0 +1,316 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(pokemon-wallpaper.jpg) no-repeat;
+
+
+}
+
+
+#content-box{
+    width:700px;
+    height: 70vh;
+    border: 10px solid black;
+    border-radius: 10px;
+    margin: 0 auto ;
+    margin-top: 83px;
+    display: flex;
+    background-size: cover;
+    box-shadow: 0px 5px 350px rgb(58, 0, 0);
+}
+
+#pokemon-background{
+    background-color: rgb(194, 0, 0);
+
+}
+
+#pokemon-name-text{
+    font-weight: 700;
+    font-size: 35px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#pokemon-info{
+
+    width: 250px;
+    height: 100%;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+#pokemon-img-box{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#pokemon-info img{
+    width: 100px;
+    height: 100px;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: rgb(102, 151, 88);
+}
+
+#pokedex-title{
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#searchInputBox{
+
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#pokemon-list{
+
+   
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    overflow-y: auto;
+    background-color: rgb(194, 0, 0);
+}
+
+.pokemon-name {
+    border:1px solid black;
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
+#pokemon-types {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.type-box {
+    padding: 6px;
+    margin: 6px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 10px 5px 350px rgb(0, 0, 0);
+
+}
+
+
+
+
+/* Types pf pokemon */
+.normal {
+    background-color: beige;
+    color: black;
+}
+
+.fire {
+    background-color: orange;
+    color: white;
+}
+
+.grass {
+    background-color: green;
+    color: white;
+}
+
+.water {
+    background-color: blue;
+    color: white;
+}
+
+.ice {
+    background-color: lightblue;
+    color: black;
+}
+
+.electric {
+    background-color: gold;
+    color: black;
+}
+
+.fighting {
+    background-color: darkred;
+    color: white;
+}
+
+.flying {
+    background-color: skyblue;
+    color: black;
+}
+
+.bug {
+    background-color: yellowgreen;
+    color: white;
+}
+
+.ghost {
+    background-color: purple;
+    color: white;
+}
+
+.rock {
+    background-color: sienna;
+    color: white;
+}
+
+.ground {
+    background-color: burlywood;
+    color: black;
+}
+
+.steel {
+    background-color: silver;
+    color: black;
+}
+
+.dark {
+    background-color: darkgray;
+    color: white;
+}
+
+.psychic {
+    background-color: palevioletred;
+    color: white;
+}
+
+.fairy {
+    background-color: pink;
+    color: black;
+}
+
+.dragon {
+    background-color: teal;
+    color: white;
+}
+
+.poison {
+    background-color: darkviolet;
+    color: white;
+}
+
+
+
+/*Pokemon Weight*/
+
+#pokemon-weight{
+    width: 150px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.818);
+    color: rgb(255, 255, 255);
+    border: 5px solid rgb(156, 0, 0);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+
+/*Description of pokemon text*/
+
+#pokemon-description{
+    width: 200px;
+    height: 25%;
+    background-color: rgb(102, 151, 88);
+
+    color: white;
+    border: 5px solid rgb(156, 0, 0);
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 20px;
+    padding-top: 10px;
+    font-size: 17px;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+}
+
+/*Description of pokemon text*/
+
+#pokemon-moves{
+    width: 200px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.87);
+    color: white;
+    border: 5px solid rgb(156, 0, 0);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 20px;
+    padding-top: 10px;
+    font-size: 15px;
+    
+   overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    display: none; /* hide scrollbar for Chrome, Safari, and Opera */
+
+  }
+
+  
+
+
+.move-box{
+    margin: 0 auto;
+    margin-top: 6px;
+}
+
+
+#searchInput{
+    
+    
+    background-color: rgba(0, 0, 0, 0.87);
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px 0px 0px 10px;
+    margin-top: 10px;
+    padding: 7px 50px 7px 50px;
+    font-size: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#searchInputBox button{
+
+    margin-top: 10px;
+
+    background-color: rgba(0, 0, 0, 0.312);
+    color: white;
+    border: 1px solid white;
+    border-radius: 0px 10px 10px 0px;
+    
+}
+
+button:active {
+    transform: translateX(-1px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }

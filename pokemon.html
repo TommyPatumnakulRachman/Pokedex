@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Pokedex
+        </title>
+
+        <link rel="stylesheet" href="pokedex.css">
+        <script src="pokedex.js"></script>
+    </head>
+
+    <body>
+
+        
+        
+        <h1 id="pokedex-title">POKEDEX</h1>
+        <div id="searchInputBox">
+        <input type="text" id="searchInput" placeholder="Pokemon name or number" onkeydown="if(event.keyCode === 13) { search(); }">
+        <button onclick="search()">🔍</button>
+        </div>
+        <div id="content-box">
+
+            
+            <!-- Left Side, display of pokedex / images / type/ etc -->
+            <div id="pokemon-background">
+               
+            <div id="pokemon-info">
+                <span id="pokemon-name-text">POKEMON</span>
+                
+                <div>
+                <img id="pokemon-img1">
+                <img id="pokemon-img2">
+                </div>
+                <div>
+                    <img id="pokemon-img3">
+                    <img id="pokemon-img4">
+                </div>
+
+                <div id="pokemon-types">
+                    <span class="type-box "></span>
+                    <span class="type-box "></span>
+                </div>
+                <div id="pokemon-weight"></div>
+
+                <div id="pokemon-description">
+
+                
+
+                </div>
+
+                <div id="pokemon-moves">
+                    
+                    </div>
+
+
+            </div>
+            </div>
+            <!--Right side display pokemon List-->
+            <div id="pokemon-list"></div>
+        </div>
+    </body>
+
+</html>
